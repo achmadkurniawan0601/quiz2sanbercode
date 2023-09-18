@@ -1,4 +1,10 @@
-{
-  "email": "testhehex@test.com",
-  "password": "testingx"
-}
+[
+  {
+    "email": "qwerty@test.com",
+    "password": "qwerty"
+  },
+  {
+    "email": "asdfg@test.com",
+    "password": "asdfg"
+  }
+]

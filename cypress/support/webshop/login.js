@@ -1,18 +1,18 @@
 class loginPage{
-    email = 'input[id="Email"]'
-    password = 'input[id="Password"]'
-    submit = 'input[class="buttons"]'
+    imel = 'input[id="Email"]'
+    passw = 'input[id="Password"]'
+    subm = 'form > .buttons > .button-1'
 
     isiEmail(columnEmail){
-        cy.get(this.kolomEmail).type(columnEmail)
+        cy.get(this.imel).type(columnEmail)
     }
 
     isiPassword(columnPassword){
-        cy.get(this.kolomPassword).type(columnPassword)
+        cy.get(this.passw).type(columnPassword)
     }
 
-    register(){
-        cy.get(this.submit).click()
+    clickLogin(){
+        cy.get(this.subm).click()
     }
 
 }

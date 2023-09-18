@@ -1,3 +1,6 @@
+import loginPage from '../../support/webshop/login'
+const userr = require ('../../fixtures/invalidAccount.json')
+
 describe("Login valid and invalid Tests", () => {
     beforeEach(() => {
       cy.visit("/login")
@@ -68,5 +71,17 @@ describe("Login valid and invalid Tests", () => {
           cy.get('.ico-logout').click()
         })
       })
+
+    it.only('Login with POM with array 0 input', () => {
+        loginPage.isiEmail(userr[0].email)
+        loginPage.isiPassword(userr[0].password)
+        loginPage.clickLogin()
+    });
+
+    it.only('Login with POM with array 1 input', () => {
+        loginPage.isiEmail(userr[1].email)
+        loginPage.isiPassword(userr[1].password)
+        loginPage.clickLogin()
+    });
   })
   
