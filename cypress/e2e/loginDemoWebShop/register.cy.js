@@ -5,6 +5,7 @@ describe("Register valid and invalid Tests", () => {
   
     it("Valid register", () => {
         cy.fixture("register").then((data) => {
+          cy.get('#gender-male').click()
           cy.get("#FirstName").type(data.firstName)
           cy.get("#LastName").type(data.lastName)
           cy.get("#Email").type(data.email)
@@ -20,6 +21,7 @@ describe("Register valid and invalid Tests", () => {
 
       it("Invalid register because email already exist", () => {
         cy.fixture("register").then((data) => {
+          cy.get('#gender-male').click()
           cy.get("#FirstName").type(data.firstName)
           cy.get("#LastName").type(data.lastName)
           cy.get("#Email").type(data.email)
