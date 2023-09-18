@@ -1,0 +1,22 @@
+{
+  "name": "quiz2",
+  "version": "1.0.0",
+  "description": "Quis 2 Sanbercode Intermediate",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achmadkurniawan0601/quiz2sanbercode.git"
+  },
+  "author": "Akur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/achmadkurniawan0601/quiz2sanbercode/issues"
+  },
+  "homepage": "https://github.com/achmadkurniawan0601/quiz2sanbercode#readme",
+  "devDependencies": {
+    "cypress": "^13.2.0"
+  }
+}
